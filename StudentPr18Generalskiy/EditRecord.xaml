@@ -1,0 +1,54 @@
+﻿<Window x:Class="StudentPr18Generalskiy.EditRecord"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentPr18Generalskiy"
+        mc:Ignorable="d"
+        Title="EditRecord" Height="1064" Width="325"
+        Loaded="Window_Loaded">
+    <Grid>
+        <Label Margin="9,38,199,972" Content="Фамилия"/>
+        <Label Margin="9,136,198,873" Content="Имя"/>
+        <Label Margin="7,224,184,798" Content="Отчество"/>
+        <Label Margin="2,320,171,688" Content="Номер зачётной книжки"/>
+        <Label Margin="7,413,202,602" Content="Общежитие"/>
+        <Label Margin="6,501,202,524" Content="Индекс группы"/>
+        <Label Margin="9,586,199,434" Content="География"/>
+        <Label Margin="8,741,199,284" Content="Математика"/>
+        <Label Margin="9,657,199,365" Content="Биология"/>
+        <Label Margin="8,817,200,207" Content="Физика"/>
+        <Label Margin="6,894,202,125" Content="Химия"/>
+        <TextBox Margin="10,63,182,932" x:Name="tbSecondName"/>
+        <TextBox Margin="11,154,181,841" x:Name="tbFirstName"/>
+        <ComboBox Margin="11,431,181,564" x:Name="CBHostel">
+            <ComboBoxItem Content="Да"/>
+            <ComboBoxItem Content="Нет"/>
+        </ComboBox>
+        <ComboBox Margin="9,919,183,76" x:Name="CBChemistry">
+            <ComboBoxItem Content="Изучает"/>
+            <ComboBoxItem Content="Не изучает"/>
+        </ComboBox>
+        <ComboBox Margin="10,841,182,154" x:Name="CBPhysics">
+            <ComboBoxItem Content="Изучает"/>
+            <ComboBoxItem Content="Не изучает"/>
+        </ComboBox>
+        <ComboBox Margin="11,764,181,231" x:Name="CBMathematics">
+            <ComboBoxItem Content="Изучает"/>
+            <ComboBoxItem Content="Не изучает"/>
+        </ComboBox>
+        <ComboBox Margin="11,679,181,316" x:Name="CBBiology">
+            <ComboBoxItem Content="Изучает"/>
+            <ComboBoxItem Content="Не изучает"/>
+        </ComboBox>
+        <ComboBox Margin="12,604,181,391" x:Name="CBGeography">
+            <ComboBoxItem Content="Изучает"/>
+            <ComboBoxItem Content="Не изучает"/>
+        </ComboBox>
+        <TextBox Margin="10,524,182,471" x:Name="tbIndexOfGroup"/>
+        <TextBox Margin="9,343,183,652" x:Name="tbNumberOfBook"/>
+        <TextBox Margin="11,250,181,745" x:Name="tbThirdName"/>
+        <Button Margin="9,993,184,10" Content="Изменить запись" Click="Button_Edit"/>
+        <Button Margin="183,993,10,10" Content="Отмена" Click="Button_Cancel"/>
+    </Grid>
+</Window>
